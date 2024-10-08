@@ -1,0 +1,129 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #555;
+    height: 70px;
+    width: 1200px;
+}
+li {
+    color: white;
+    margin: 0 10px;
+}
+li:not(:last-child)::after {
+    content: "|";
+    margin-left: 10px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between;
+    min-height: 100vh; 
+}
+
+header {
+    width: 100%;
+    text-align: center;
+}
+
+header img {
+    width: 1200px;  
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: -26px;
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-column {
+    width: 55%;
+    padding-right: 20px;
+}
+
+h1 {
+    color: #a23d3d;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+    color: #555;
+    padding: 20px;
+}
+
+.grid-column {
+    width: 40%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.grid-item {
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 2px solid #a23d3d;
+    border-radius: 0px;
+    padding: 20px;
+    height: 200px;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    background-color: #e1e1e1;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+}
+
+.grid-item p {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #555; 
+    height: auto;             
+    width: 100%;                               
+    border-radius: 0px;     
+    text-align: center;
+}    
+
+.footer {
+    background-color: #a23d3d; 
+    color: white;              
+    text-align: center;       
+    padding: 10px 0;          
+    position: relative;       
+    width: 100%;              
+    bottom: 0;                
+    left: 0;              
+    margin-top: -20px;   
+    max-width: 1200px;
+}
